@@ -13,5 +13,4 @@ public class AppConfig {
     TimeManager getTime() {
         return new TimeManager();
     }
-
 }

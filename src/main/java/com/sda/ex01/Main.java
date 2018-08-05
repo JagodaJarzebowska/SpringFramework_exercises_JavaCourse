@@ -2,6 +2,7 @@ package com.sda.ex01;
 
 import com.sda.ex02.TimeManager;
 import com.sda.ex03.TimeService;
+import com.sda.ex05.RandomNumberGenerator;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -17,6 +18,10 @@ public class Main {
         //--ex04
         TimeService timeService = context.getBean(TimeService.class);
         System.out.println("timeService: " + timeService.getTimeManager().showDate());
+
+        //--ex05
+        RandomNumberGenerator randomNumberGenerator = (RandomNumberGenerator) context.getBean("randomNumber");
+        System.out.println("number: " + randomNumberGenerator.randomNumber());
     }
 
 }
