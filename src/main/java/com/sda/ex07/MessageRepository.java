@@ -4,6 +4,7 @@ import com.sda.ex06.Message;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
+import java.util.List;
 
 @Repository
 public class MessageRepository {
@@ -24,6 +25,10 @@ public class MessageRepository {
     }
 
     public Message get(Integer id){
+        return null;
+    }
+
+    public List<Message> getAll(Integer id){
         return null;
     }
 }
